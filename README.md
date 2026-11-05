@@ -20,9 +20,19 @@ bash sim/run.sh
 
 Existing Windows instructions, where supplied, are retained in `scripts/`. Do not assume the testbench will run in every edition of a simulator. Check [the retained validation report](source-docs/VALIDATION.md) and the original README.
 
+### Portable deterministic regression
+
+With `vlib`, `vlog`, and `vsim` on PATH, run from the repository root:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_portable.ps1
+```
+
+This compiles only the unchanged RTL and [plain testbench](tb/tb_portable.sv), writing fresh output to the ignored `portable-results/` directory. It checks all 64 RAM words after reset, deterministic write/readback, setup and access timing, constant response signals, write guards, low-address-bit aliasing, and reset during a pending write. See [portable validation](docs/portable_validation.md) and its [fresh logs](reports/portable-2026-11-05/). The original class-based environment, randomization and covergroup remain as they were; the portable checks are not equivalent coverage or complete APB protocol verification.
+
 ## Verification status
 
-The included logs are historical evidence copied from the source repository. **The extracted copy has not been simulated by this extraction script.** Re-run before reporting fresh results. Some original exercises were blocked by verification-feature licence restrictions; those restrictions are not changed by packaging.
+The original `reports/compile.log` and `reports/simulation.log` are historical evidence copied from the source repository. The extraction script performed no simulation. The separately recorded portable run passed its stated deterministic checks; the original class-based environment remains blocked by a verification-feature licence in the tested Starter editions. No functional coverage is claimed.
 
 ## Provenance and changes
 
