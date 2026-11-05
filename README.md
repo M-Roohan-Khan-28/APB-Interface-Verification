@@ -1,14 +1,12 @@
-# APB RAM with SystemVerilog interface
+# APB RAM Interface and Verification
 
-**Verilog / SystemVerilog · RTL and verification exercise**
+**SystemVerilog · 64-word RAM · Directed simulation**
 
-This standalone repository preserves the original `apb-interface` exercise from my `hdl-labs` collection. Original RTL, testbench, simulator scripts and existing evidence are preserved byte-for-byte. This packaging step is not a new simulation or a claim of full protocol compliance.
+A zero-wait-state APB memory interface built around 64 words of 32-bit storage. A SystemVerilog interface groups the bus signals, and a separate deterministic testbench checks the implemented memory and control behaviour.
 
-## Overview and original documentation
+The recorded portable regression passed **1,317 checks**, including reset, write/readback, setup/access observations, and write guards. The implemented slave keeps `PREADY` high and `PSLVERR` low; the tests describe this bounded implementation. See [portable validation](docs/portable_validation.md) for its exact scope.
 
-Extract interface-based design and tests. State implemented APB revision/subset, reset, setup/access sequencing and wait-state scope.
-
-See [the original exercise README](SOURCE_README.md) for its existing specification, source layout and tool instructions. The text above identifies review goals; it does not claim that new enhancements have already been implemented.
+The original class-based environment and historical evidence are retained separately. [Original source documentation](SOURCE_README.md) and the provenance section below identify the unchanged baseline.
 
 ## Run
 
@@ -42,4 +40,4 @@ Source commit: `df8d6f66898a08df75cd2071ddac7bbba9ba9b16`. Source path: `project
 
 ## Next engineering work
 
-Review the specification and implementation, run the supplied tests, add independently justified checks, and record actual results and known limitations. Waveform screenshots can be added later; no fabricated screenshots or coverage figures are needed.
+Planned extensions include running the retained class-based environment in a compatible simulator and adding assertion and coverage evidence. Wait-state and error-response support would require a separate RTL extension.
