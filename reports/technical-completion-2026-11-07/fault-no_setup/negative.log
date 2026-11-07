@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb64_protocol_negative -do "run -all; quit -code 0" 
+# Start time: 21:33:14 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.apb64_protocol_negative
+# Loading work.apb64_monitor
+# run -all
+# ** Fatal: APB64_NEGATIVE_UNDETECTED ACCESS_WITHOUT_SETUP got=0
+#    Time: 36 ns  Scope: apb64_protocol_negative File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_protocol_negative.sv Line: 19
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_protocol_negative.sv(19)
+#    Time: 36 ns  Iteration: 0  Instance: /apb64_protocol_negative
+# End time: 21:33:16 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
