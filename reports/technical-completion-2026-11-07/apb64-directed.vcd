@@ -1,0 +1,112 @@
+$date
+	Sat Nov 07 21:32:47 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module apb64_contract_test $end
+$var reg 1 ! PCLK $end
+
+$scope module bus $end
+$var reg 1 " PRESETn $end
+$var reg 1 # PSEL $end
+$var reg 1 $ PENABLE $end
+$var reg 1 % PWRITE $end
+$var reg 8 & PADDR [7:0] $end
+$var reg 32 ' PWDATA [31:0] $end
+$var reg 32 ( PRDATA [31:0] $end
+$var reg 1 ) PREADY $end
+$var reg 1 * PSLVERR $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+b0 &
+b0 '
+b0 (
+1)
+0*
+$end
+#5000
+1!
+#10000
+0!
+#15000
+1!
+#20000
+0!
+#25000
+1!
+#30000
+0!
+1"
+#35000
+1!
+#40000
+0!
+1#
+1%
+b10010001101000101011001111000 '
+#45000
+1!
+#50000
+0!
+1$
+#55000
+1!
+#60000
+0!
+0$
+0%
+b0 '
+b10010001101000101011001111000 (
+#65000
+1!
+#70000
+0!
+1$
+#75000
+1!
+#80000
+0!
+0$
+1%
+b100 &
+b10100101101001010101101001011010 '
+b0 (
+#85000
+1!
+#90000
+0!
+1$
+#95000
+1!
+#100000
+0!
+0$
+0%
+b0 '
+b10100101101001010101101001011010 (
+#105000
+1!
+#110000
+0!
+1$
+#115000
+1!
+#120000
+0!
+0#
+0$
+b0 &
+b0 (

@@ -1,0 +1,10 @@
+﻿{
+    "source_revision":  "9ed002bbb9dc93b312acb22826335d83daf834e2",
+    "kind":  "rtl",
+    "fault":  "back_to_back",
+    "mutant_sha256":  "B6C965EE15915713AA74CFBC5A0B8986B42B326FA3BB8E1424AF398524906756",
+    "wrapper_exit_code":  1,
+    "portable_pass":  true,
+    "contract_pass_before_negative":  false,
+    "expected_diagnostic_seen":  true
+}

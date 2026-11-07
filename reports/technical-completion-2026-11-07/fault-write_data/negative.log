@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb64_protocol_negative -do "run -all; quit -code 0" 
+# Start time: 21:34:21 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.apb64_protocol_negative
+# Loading work.apb64_monitor
+# run -all
+# APB64_MONITOR_VIOLATION ACCESS_WITHOUT_SETUP
+# APB64_NEGATIVE_CASE_PASS access_without_setup
+# APB64_MONITOR_VIOLATION CONTROL_CHANGED_IN_ACCESS
+# APB64_NEGATIVE_CASE_PASS address_changed
+# ** Fatal: APB64_NEGATIVE_UNDETECTED WRITE_DATA_CHANGED got=0
+#    Time: 116 ns  Scope: apb64_protocol_negative File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_protocol_negative.sv Line: 35
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_protocol_negative.sv(35)
+#    Time: 116 ns  Iteration: 0  Instance: /apb64_protocol_negative
+# End time: 21:34:23 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0

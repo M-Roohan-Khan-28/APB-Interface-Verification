@@ -1,0 +1,18 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb64_contract_test -do "run -all; quit -code 0" 
+# Start time: 21:34:35 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.apb64_contract_test
+# Loading work.apb_if
+# Loading work.apb_ram
+# Loading work.apb64_monitor
+# run -all
+# ** Fatal: APB64_MISMATCH setup addr=04 sel=1 en=0 wr=0 expected=20202020 observed=1f9d3e4f/1/0
+#    Time: 12121 ns  Scope: apb64_contract_test.check_pins File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_contract_test.sv Line: 38
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/apb/tb/apb64_contract_test.sv(38)
+#    Time: 12121 ns  Iteration: 0  Instance: /apb64_contract_test
+# End time: 21:34:37 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0

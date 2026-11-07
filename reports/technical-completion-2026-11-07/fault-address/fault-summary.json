@@ -1,0 +1,10 @@
+﻿{
+    "source_revision":  "9ed002bbb9dc93b312acb22826335d83daf834e2",
+    "kind":  "monitor",
+    "fault":  "address",
+    "mutant_sha256":  "EA251146DCD7DDF60A5EFC5C94F83D266477FBE218B9089B06E5997BD009FB73",
+    "wrapper_exit_code":  1,
+    "portable_pass":  true,
+    "contract_pass_before_negative":  true,
+    "expected_diagnostic_seen":  true
+}

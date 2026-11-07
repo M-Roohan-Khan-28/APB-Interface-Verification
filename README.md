@@ -8,6 +8,19 @@ The recorded portable regression passed **1,317 checks**, including reset, write
 
 The original class-based environment and historical evidence are retained separately. [Original source documentation](SOURCE_README.md) and the provenance section below identify the unchanged baseline.
 
+## New bounded 64-word contract regression
+
+At source revision `9ed002bbb9dc93b312acb22826335d83daf834e2`,
+the [separate result-aware regression](docs/RESULTS.md) passed the preserved
+1,317 checks, 2,697 independent memory comparisons, and three reset-isolated
+malformed-master detections. It exercises all 64 words, aliases, reset,
+SETUP/ACCESS sequencing and legal `PSEL`-held back-to-back transfers.
+Four disposable faults produced nonzero wrapper exits. A short simulator VCD
+and a [measured waveform](reports/technical-completion-2026-11-07/apb64-directed.svg)
+are retained with raw logs. See the [implemented contract](docs/SPECIFICATION.md).
+The original class environment remains licence-blocked and NOT RUN; no
+equivalent coverage or complete APB protocol claim is made.
+
 ## Run
 
 From the repository root, with the required ModelSim/Questa executables and appropriate licence available:
