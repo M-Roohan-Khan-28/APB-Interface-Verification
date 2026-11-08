@@ -1,5 +1,8 @@
 # APB RAM Interface and Verification
 
+See the [separate reusable APB UVM adapter](docs/UVM_ADAPTER.md) for the new
+deterministic UVM/SVA milestone and its explicit coverage/licence limits.
+
 **SystemVerilog · 64-word RAM · Directed simulation**
 
 A zero-wait-state APB memory interface built around 64 words of 32-bit storage. A SystemVerilog interface groups the bus signals, and a separate deterministic testbench checks the implemented memory and control behaviour.
